@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Certyfikat ukończenia praktyk</title>
+    <link th:href="@{/static/main.css}" rel="stylesheet"/>
+</head>
+<body class="flex items-center justify-center h-screen">
+
+<!--<span th:text="${certDataString}"></span>-->
+<h3>Certyfikat ukończenia praktyk</h3>
+
+Data zakończenia: <span th:text="${certData.dateFinished}"></span><br>
+Data rozpoczęcia: <span th:text="${certData.dateStarted}"></span><br>
+Ilość godzin: <span th:text="${certData.hoursCount}"></span> <br>
+Sprawozdanie: <span th:text="${certData.report}"></span><br>
+Ocena opiekuna z firmy: <span th:text="${certData.gradesFromCompanySupervisor}"></span><br>
+Ocena opiekuna z uczelni: <span th:text="${certData.gradeFromUniversitySupervisor}"></span><br>
+Uwagu opiekuna z firmy: <span th:text="${certData.additionalInformation}"></span><br>
+Cczy praktyka była płatna: <span th:text="${certData.isPaid}"></span><br>
+Stanowisko: <span th:text="${certData.studentPosition}"></span><br>
+Adres studenta: <span th:text="${certData.studentAddress}"></span><br>
+Kierunek studiów: <span th:text="${certData.fieldOfStudy}"></span><br>
+Numer indeksu:<span th:text="${certData.number_index}"></span><br>
+
+
+<h5>student</h5>
+Imię :<span th:text="${studentData.name}"></span><br>
+Nazwisko:<span th:text="${studentData.surname}"></span><br>
+email:<span th:text="${studentData.email}"></span><br>
+
+<h5>Opiekunz uczelni</h5>
+Imię:<span th:text="${usData.name}"></span><br>
+Nazwisko:<span th:text="${usData.surname}"></span><br>
+email:<span th:text="${usData.email}"></span><br>
+
+<h5>Opiekunz firmy</h5>
+Imię:<span th:text="${csData.name}"></span><br>
+Nazwisko:<span th:text="${csData.surname}"></span><br>
+email:<span th:text="${csData.email}"></span><br>
+
+
+<h5>Firma</h5>
+Nazwa firmy:<span th:text="${companyData.companyName}"></span><br>
+NIP:<span th:text="${companyData.nip}"></span><br>
+Regon:<span th:text="${companyData.regon}"></span><br>
+Miasto:<span th:text="${companyData.address.city}"></span><br>
+street:<span th:text="${companyData.address.street}"></span><br>
+zipcodee:<span th:text="${companyData.address.zipCode}"></span><br>
+
+<h5>Wydział</h5>
+Nazwa wydziału:<span th:text="${departmentData.name}"></span><br>
+SKRÓT:<span th:text="${departmentData.shortname}"></span><br>
+
+
+</body>

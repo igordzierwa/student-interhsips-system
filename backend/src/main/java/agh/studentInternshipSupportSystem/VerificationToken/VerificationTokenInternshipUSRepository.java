@@ -1,0 +1,15 @@
+package agh.studentInternshipSupportSystem.VerificationToken;
+import agh.studentInternshipSupportSystem.CompanySupervisors.CompanySupervisor;
+import agh.studentInternshipSupportSystem.Internships.Internship;
+import agh.studentInternshipSupportSystem.UniversitySupervisors.UniversitySupervisor;
+
+import java.util.List;
+
+
+public interface VerificationTokenInternshipUSRepository extends VerificationTokenRepository<VerificationTokenInternshipUS, Long>{
+   // T findVerificationTokenByInternshipAndUniversitySupervisor(Internship internship, UniversitySupervisor universitySupervisor);
+   VerificationTokenInternshipUS findVerificationTokenByToken(String token);
+    VerificationTokenInternshipUS findVerificationTokenByInternshipAndUniversitySupervisor(Internship internship, UniversitySupervisor universitySupervisor);
+    List<VerificationTokenInternshipUS> findVerificationTokenInternshipUSByUniversitySupervisor_Username(String username);
+}
+
