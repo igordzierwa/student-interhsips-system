@@ -26,7 +26,7 @@ System as Web Application, allows:
 - **Hibernate** - Object-Relational Mapping framework
 - **Swagger** – Automated documentation for describing RESTful APIs (expressed using JSON)
 
-<img width="900" alt="Screen Shot 2021-10-09 at 00 55 35 AM" src="https://user-images.githubusercontent.com/34041060/136632722-f6ed5408-2462-434d-bbaf-05d9d6d1cd29.png">
+<img width="1030" alt="136632722-f6ed5408-2462-434d-bbaf-05d9d6d1cd29" src="https://user-images.githubusercontent.com/82596765/199352966-dfe6907f-f0fe-491d-b9ec-f76b8ace4dc2.png">
 
 ## Backend
 API based on REST architectural style.
